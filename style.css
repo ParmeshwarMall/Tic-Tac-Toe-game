@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    height: 70px;
+    text-align: center;
+}
+nav ul{
+    color: white;
+    list-style: none;
+    font-size:xx-large;
+    padding-top: 12px;
+}
+
+.gamecontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family:'Roboto', sans-serif;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(248, 232, 232);
+}
+
+.gameinfo{
+    padding: 0px 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 0;
+    transition: width 1s ease-in-out;
+    margin-top: 23px;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+.main{
+    margin-top: 20px;
+}
+#reset{
+    height: 40px;
+    width: 90px;
+    margin-left: 20px;
+    font-size: 23px;
+    border-radius: 7px;
+}
+.info{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width:800px){
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 40px;
+    }
+    .container{
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+        font-family:'Roboto', sans-serif;
+    }
+    .main{
+        text-align: center;
+    }
+    #reset{
+        margin-top: 30px;
+    }
+}
